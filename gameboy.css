@@ -2,11 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-@font-face {
-    font-family: 'GameBoy';
-    src: url('Early%20GameBoy.ttf') format('truetype');
-}
-
 :root {
     --gb-0: #9bbc0f;
     --gb-1: #8bac0f;
@@ -16,7 +11,7 @@
 
 *{margin:0;padding:0;box-sizing:border-box}
 
-html,body{height:100%;font-family:'GameBoy','Press Start 2P',monospace;font-size:12px;background:var(--gb-0);color:var(--gb-3);line-height:1.6}
+html,body{height:100%;font-family:'Press Start 2P',monospace;font-size:12px;background:var(--gb-0);color:var(--gb-3);line-height:1.6}
 
 body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background:repeating-linear-gradient(to bottom,transparent,transparent 2px,rgba(15,56,15,.03)2px,rgba(15,56,15,.03)4px);pointer-events:none;z-index:1000}
 
@@ -34,24 +29,24 @@ h3{font-size:1rem}
 .col-3{flex:0 0 25%}
 
 /* Standard buttons */
-button,.button{display:inline-block;padding:.75rem 1rem;font-size:12px;text-align:center;text-decoration:none;color:var(--gb-3);background:var(--gb-0);border:2px solid var(--gb-3);cursor:pointer;transition:all .1s;font-family:'GameBoy','Press Start 2P',monospace}
+button,.button{display:inline-block;padding:.75rem 1rem;font-size:12px;text-align:center;text-decoration:none;color:var(--gb-3);background:var(--gb-0);border:2px solid var(--gb-3);cursor:pointer;transition:all .1s;font-family:'Press Start 2P',monospace}
 
 button:hover,.button:hover{background:var(--gb-1);transform:translate(-1px,-1px)}
 button:active,.button:active{transform:translate(1px,1px)}
 
 /* GameBoy A/B circular buttons */
-.btn-gameboy{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:var(--gb-1);border:3px solid var(--gb-3);color:var(--gb-3);font-family:'GameBoy','Press Start 2P',monospace;font-size:10px;cursor:pointer;transition:all .1s;box-shadow:3px 3px 0 var(--gb-3),inset -2px -2px 4px rgba(0,0,0,.2),inset 2px 2px 4px rgba(255,255,255,.2)}
+.btn-gameboy{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:var(--gb-1);border:3px solid var(--gb-3);color:var(--gb-3);font-family:'Press Start 2P',monospace;font-size:10px;cursor:pointer;transition:all .1s;box-shadow:3px 3px 0 var(--gb-3),inset -2px -2px 4px rgba(0,0,0,.2),inset 2px 2px 4px rgba(255,255,255,.2)}
 
 .btn-gameboy:hover{background:var(--gb-0);transform:scale(1.05)}
 .btn-gameboy:active{transform:scale(.95);box-shadow:1px 1px 0 var(--gb-3),inset -1px -1px 2px rgba(0,0,0,.3),inset 1px 1px 2px rgba(0,0,0,.1)}
 
 /* GameBoy START/SELECT buttons */
-.btn-control{display:inline-flex;align-items:center;justify-content:center;width:60px;height:25px;background:var(--gb-2);border:2px solid var(--gb-3);border-radius:12px;color:var(--gb-0);font-family:'GameBoy','Press Start 2P',monospace;font-size:8px;cursor:pointer;transition:all .1s;box-shadow:1px 1px 0 var(--gb-3),inset -1px -1px 2px rgba(0,0,0,.2)}
+.btn-control{display:inline-flex;align-items:center;justify-content:center;width:60px;height:25px;background:var(--gb-2);border:2px solid var(--gb-3);border-radius:12px;color:var(--gb-0);font-family:'Press Start 2P',monospace;font-size:8px;cursor:pointer;transition:all .1s;box-shadow:1px 1px 0 var(--gb-3),inset -1px -1px 2px rgba(0,0,0,.2)}
 
 .btn-control:hover{background:var(--gb-1);color:var(--gb-3)}
 .btn-control:active{transform:scale(.95);box-shadow:0 0 0 var(--gb-3),inset -1px -1px 1px rgba(0,0,0,.3)}
 
-input,textarea,select{width:100%;padding:.75rem;margin-bottom:1rem;border:2px solid var(--gb-3);background:var(--gb-0);color:var(--gb-3);font-family:'GameBoy','Press Start 2P',monospace;font-size:12px}
+input,textarea,select{width:100%;padding:.75rem;margin-bottom:1rem;border:2px solid var(--gb-3);background:var(--gb-0);color:var(--gb-3);font-family:'Press Start 2P',monospace;font-size:12px}
 
 input:focus,textarea:focus,select:focus{outline:none;background:var(--gb-1)}
 
@@ -79,7 +74,7 @@ label{display:block;margin-bottom:.5rem;font-size:10px}
 .progress-bar-75{width:75%}
 .progress-bar-100{width:100%}
 
-.code-container{background:var(--gb-2);color:var(--gb-0);border:2px solid var(--gb-3);padding:1rem;font-family:'GameBoy','Press Start 2P',monospace;font-size:10px;margin-bottom:1rem;white-space:pre-wrap}
+.code-container{background:var(--gb-2);color:var(--gb-0);border:2px solid var(--gb-3);padding:1rem;font-family:'Press Start 2P',monospace;font-size:10px;margin-bottom:1rem;white-space:pre-wrap}
 
 a{color:var(--gb-3);text-decoration:none;border-bottom:1px solid var(--gb-3)}
 a:hover{color:var(--gb-2)}

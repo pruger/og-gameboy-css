@@ -15,17 +15,10 @@ GameBoy CSS is a minimalist CSS framework that captures the classic GameBoy aest
 * Authentic retro styling
 * Simple and lightweight
 
-### Font Requirement
-This framework uses the Early GameBoy font created by Jimmy Campbell as the primary font, with Press Start 2P as a fallback. You have two options:
+### Font
+This framework uses Press Start 2P from Google Fonts, which loads automatically. No additional font installation required.
 
-**Option 1 (Recommended):** Use the primary font
-1. Download Early GameBoy from [Dafont](https://www.dafont.com/early-gameboy.font)
-2. Install it on your machine, or
-3. Host it on your server and link it properly
-
-**Option 2 (Fallback):** The framework includes Press Start 2P as a fallback font, which will load automatically from Google Fonts if Early GameBoy is not available.
-
-**Credit:** Early GameBoy font by [Jimmy Campbell](https://www.dafont.com/jimmy-campbell.d5241) | Press Start 2P by [CodeMan38](https://fonts.google.com/specimen/Press+Start+2P)
+**Credit:** Press Start 2P by [CodeMan38](https://fonts.google.com/specimen/Press+Start+2P)
 
 ### Installation
 Local installation:
@@ -34,7 +27,7 @@ Local installation:
 ```
 
 ### Usage
-GameBoy CSS provides components with predefined GameBoy-style appearance. You will need to define your own layout. The framework will automatically use Early GameBoy font if available, or fall back to Press Start 2P.
+GameBoy CSS provides components with predefined GameBoy-style appearance. You will need to define your own layout. The framework uses Press Start 2P font automatically.
 
 ### Preview
 <img src="screenshots/screen1.jpg" alt="Screen1" width="700"/>
