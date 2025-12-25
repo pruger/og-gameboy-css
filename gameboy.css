@@ -1,4 +1,4 @@
-/* gameboy.css - Ultra-slim GameBoy framework */
+/* gameboy.css - Slim GameBoy framework */
 
 @font-face {
     font-family: 'GameBoy';
@@ -31,14 +31,32 @@ h3{font-size:1rem}
 .col-4{flex:0 0 33.33%}
 .col-3{flex:0 0 25%}
 
+/* Standard buttons */
 button,.button{display:inline-block;padding:.75rem 1rem;font-size:12px;text-align:center;text-decoration:none;color:var(--gb-3);background:var(--gb-0);border:2px solid var(--gb-3);cursor:pointer;transition:all .1s;font-family:'GameBoy',monospace}
 
 button:hover,.button:hover{background:var(--gb-1);transform:translate(-1px,-1px)}
 button:active,.button:active{transform:translate(1px,1px)}
 
+/* GameBoy A/B circular buttons */
+.btn-gameboy{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:var(--gb-1);border:3px solid var(--gb-3);color:var(--gb-3);font-family:'GameBoy',monospace;font-size:10px;cursor:pointer;transition:all .1s;box-shadow:3px 3px 0 var(--gb-3),inset -2px -2px 4px rgba(0,0,0,.2),inset 2px 2px 4px rgba(255,255,255,.2)}
+
+.btn-gameboy:hover{background:var(--gb-0);transform:scale(1.05)}
+.btn-gameboy:active{transform:scale(.95);box-shadow:1px 1px 0 var(--gb-3),inset -1px -1px 2px rgba(0,0,0,.3),inset 1px 1px 2px rgba(0,0,0,.1)}
+
+/* GameBoy START/SELECT buttons */
+.btn-control{display:inline-flex;align-items:center;justify-content:center;width:60px;height:25px;background:var(--gb-2);border:2px solid var(--gb-3);border-radius:12px;color:var(--gb-0);font-family:'GameBoy',monospace;font-size:8px;cursor:pointer;transition:all .1s;box-shadow:1px 1px 0 var(--gb-3),inset -1px -1px 2px rgba(0,0,0,.2)}
+
+.btn-control:hover{background:var(--gb-1);color:var(--gb-3)}
+.btn-control:active{transform:scale(.95);box-shadow:0 0 0 var(--gb-3),inset -1px -1px 1px rgba(0,0,0,.3)}
+
 input,textarea,select{width:100%;padding:.75rem;margin-bottom:1rem;border:2px solid var(--gb-3);background:var(--gb-0);color:var(--gb-3);font-family:'GameBoy',monospace;font-size:12px}
 
 input:focus,textarea:focus,select:focus{outline:none;background:var(--gb-1)}
+
+input[type="radio"],input[type="checkbox"]{width:auto;height:auto;margin-right:.5rem;accent-color:var(--gb-2)}
+
+/* Select dropdown styling - If anyone can get a better implementation. Let me know*/
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230f380f' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .75rem center;background-size:12px 8px;padding-right:2.5rem}
 
 label{display:block;margin-bottom:.5rem;font-size:10px}
 

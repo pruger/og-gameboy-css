@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameBoy CSS Framework - Ultra Slim Demo</title>
+    <title>GameBoy CSS Framework Demo</title>
     <link rel="stylesheet" href="gameboy.css">
     <style>
         .demo-header{text-align:center;margin-bottom:2rem;padding:2rem;border:2px solid var(--gb-3);background:var(--gb-2);color:var(--gb-0)}
         .section{margin:2rem 0;padding:1.5rem;border:2px solid var(--gb-3);background:var(--gb-0)}
+        .button-group{margin:1rem 0}
+        .gameboy-controls{display:flex;justify-content:space-around;align-items:center;margin:2rem 0}
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="demo-header">
-        <h1>🎮 GameBoy CSS</h1>
-        <p>Ultra-slim framework • 2.9KB</p>
+        <h1>[ GameBoy CSS</h1>
+        <p>Ultra-slim framework • sub 5KB</p>
         <p>Authentic GameBoy styling</p>
     </div>
 
@@ -29,18 +31,29 @@
     </div>
 
     <div class="section">
-        <h2>Buttons</h2>
-        <button>START</button>
-        <button class="mt-1">SELECT</button>
-        <a href="#" class="button mt-1">OPTIONS</a>
-        <a href="#" class="button mt-1">CONTINUE</a>
+        <h1>Buttons</h1>
+        <h2>Standard Buttons</h2>
+        <div class="button-group">
+            <button>Regular</button>
+            <a href="#" class="button mt-1">Link</a>
+        </div>
+        <h2>Action Buttons</h2>
+        <div class="button-group">
+            <button class="btn-gameboy">A</button>
+            <button class="btn-gameboy">B</button>
+        </div>
+        <h2>Control Buttons</h2>
+        <div class="button-group">
+            <button class="btn-control">START</button>
+            <button class="btn-control">SELECT</button>
+        </div>
     </div>
 
     <div class="section">
         <h2>Forms</h2>
         <form>
             <label for="name">PLAYER NAME</label>
-            <input type="text" id="name" placeholder="ENTER NAME" maxlength="8">
+            <input type="text" id="name" placeholder="ENTER NAME" maxlength="15">
             
             <label for="level">SELECT LEVEL</label>
             <select id="level">
@@ -48,6 +61,9 @@
                 <option>WORLD 1-2</option>
                 <option>WORLD 1-3</option>
             </select>
+            
+            <label for="password">PASSWORD (gameboy)</label>
+            <input type="password" id="password" placeholder="ENTER PASSWORD" maxlength="20">
             
             <div>
                 <label><input type="checkbox" checked> SOUND ON</label>
@@ -123,6 +139,14 @@
                     <li>OPTIONS</li>
                     <li>QUIT</li>
                 </ul>
+                <div style="margin-top:1rem;">
+                    <button class="btn-gameboy">A</button>
+                    <button class="btn-gameboy ml-1">B</button>
+                </div>
+                <div style="margin-top:1rem;">
+                    <button class="btn-control">START</button>
+                    <button class="btn-control ml-1">SELECT</button>
+                </div>
                 <button onclick="document.getElementById('modal').style.display='none'" class="mt-1">CLOSE</button>
             </div>
         </div>
@@ -139,10 +163,16 @@
     --gb-3: #0f380f; /* Darkest */
 }
 
-button {
-    background: var(--gb-0);
-    border: 2px solid var(--gb-3);
-    color: var(--gb-3);
+.btn-gameboy {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn-control {
+    width: 60px;
+    height: 25px;
+    background: var(--gb-2);
 }
         </div>
     </div>
@@ -158,15 +188,13 @@ button {
     </div>
 
     <div class="demo-header text-center">
-        <h2>🎮 Framework Stats</h2>
+        <h2>[ Framework Stats</h2>
         <ul style="text-align:left;max-width:300px;margin:0 auto;">
-            <li>✅ 2.9KB total size</li>
-            <li>✅ Local GameBoy font</li>
-            <li>✅ Authentic green palette</li>
-            <li>✅ LCD scanline effect</li>
-            <li>✅ Responsive grid</li>
-            <li>✅ No dependencies</li>
-            <li>✅ All essential components</li>
+            <li>( Sub 5 KB total size</li>
+            <li>( Authentic green palette</li>
+            <li>( LCD scanline effect</li>
+            <li>( A/B action buttons</li>
+            <li>( START/SELECT buttons</li>
         </ul>
     </div>
 
@@ -177,6 +205,7 @@ button {
 </div>
 
 <script>
+// Modal
 document.getElementById('modal').addEventListener('click', function(e) {
     if (e.target === this) {
         this.style.display = 'none';
