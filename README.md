@@ -36,4 +36,4 @@ GameBoy CSS provides components with predefined GameBoy-style appearance. You wi
 <img src="screenshots/screen1.jpg" alt="Screen1" width="700"/>
 
 ### Demo
-**[TBA](#)**
+**[OG Gameboy CSS Demo](https://pruger.github.io/og-gameboy-css/)**
