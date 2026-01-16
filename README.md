@@ -26,6 +26,11 @@ Local installation:
     <link rel="stylesheet" href="gameboy.css">
 ```
 
+CDN installation
+````
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pruger/og-gameboy-css/gameboy.css">
+````
+
 ### Usage
 GameBoy CSS provides components with predefined GameBoy-style appearance. You will need to define your own layout. The framework uses Press Start 2P font automatically.
 
